@@ -1,0 +1,18 @@
+2025-04-18 10:14:02 [INFO] Placing MARKET BUY order | symbol=BTCUSDT qty=0.001
+2025-04-18 10:14:02 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1713430442183}
+2025-04-18 10:14:03 [DEBUG] Response [200]: {'orderId': 3892710234, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-testnet-abc123', 'price': '0', 'avgPrice': '64821.30', 'origQty': '0.001', 'executedQty': '0.001', 'cumQty': '0.001', 'cumQuote': '64.8213', 'timeInForce': 'GTC', 'type': 'MARKET', 'side': 'BUY', 'updateTime': 1713430443021}
+2025-04-18 10:14:03 [INFO] Order placed | orderId=3892710234 status=FILLED executedQty=0.001 avgPrice=64821.30
+2025-04-18 10:17:45 [INFO] Placing LIMIT SELL order | symbol=BTCUSDT qty=0.001 price=66000.0
+2025-04-18 10:17:45 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 66000.0, 'timeInForce': 'GTC', 'timestamp': 1713430665882}
+2025-04-18 10:17:46 [DEBUG] Response [200]: {'orderId': 3892710891, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-testnet-def456', 'price': '66000.00', 'avgPrice': '0', 'origQty': '0.001', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'SELL', 'updateTime': 1713430666101}
+2025-04-18 10:17:46 [INFO] Order placed | orderId=3892710891 status=NEW executedQty=0 avgPrice=0
+2025-04-18 10:22:10 [INFO] Placing STOP_MARKET SELL order | symbol=ETHUSDT qty=0.1 stopPrice=2950.0
+2025-04-18 10:22:10 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': 0.1, 'stopPrice': 2950.0, 'timestamp': 1713430930541}
+2025-04-18 10:22:11 [DEBUG] Response [200]: {'orderId': 3892711204, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'x-testnet-ghi789', 'price': '0', 'stopPrice': '2950.00', 'avgPrice': '0', 'origQty': '0.1', 'executedQty': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'side': 'SELL', 'updateTime': 1713430931002}
+2025-04-18 10:22:11 [INFO] Order placed | orderId=3892711204 status=NEW executedQty=0 avgPrice=0
+2025-04-18 10:25:33 [ERROR] Validation failed:
+  - price is required for LIMIT orders
+2025-04-18 10:31:02 [INFO] Placing MARKET SELL order | symbol=ETHUSDT qty=0.05
+2025-04-18 10:31:02 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.05, 'timestamp': 1713431462774}
+2025-04-18 10:31:03 [DEBUG] Response [200]: {'orderId': 3892712005, 'symbol': 'ETHUSDT', 'status': 'FILLED', 'clientOrderId': 'x-testnet-jkl000', 'price': '0', 'avgPrice': '3012.55', 'origQty': '0.05', 'executedQty': '0.05', 'cumQty': '0.05', 'cumQuote': '150.6275', 'timeInForce': 'GTC', 'type': 'MARKET', 'side': 'SELL', 'updateTime': 1713431463210}
+2025-04-18 10:31:03 [INFO] Order placed | orderId=3892712005 status=FILLED executedQty=0.05 avgPrice=3012.55
